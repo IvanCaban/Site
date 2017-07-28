@@ -5,19 +5,16 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="Style.css">
 	<meta name="viewport" content="width=device-width">
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
 	<header class="b-header">
 		<div class="L-wrapper__site b-header__content">
-			<div class="b-header__left">
-				<a href="#" class="b-header__logo"><img src="Img/logo.svg" alt="Homsters" class="b-header__logo__img"></a> 
-				<a href="#" class="b-header__newBuid">Новостройки</a>
-				<a href="#" class="b-header__secondProp">Вторичная недвижимость</a>
-			</div>
-			<div class="b-header__right">
-				<a href="#" class="b-header__enter">Войти на сайт</a>
-				<button class="b-header__adsBtn">Разместить объявление</button>
-			</div>	
+			<a href="#" class="b-header__logo"><img src="Img/logo.svg" alt="Homsters" class="b-header__logo__img"></a> 
+			<a href="#" class="b-header__newBuid">Новостройки</a>
+			<a href="#" class="b-header__secondProp">Вторичная недвижимость</a>
+			<a href="#" class="b-header__enter">Войти на сайт</a>
+			<button class="b-header__adsBtn">Разместить объявление</button>
 		</div>
 	</header>
 		
@@ -27,7 +24,7 @@
 			<p class="b-siteFace__subTitle">Европейские стандарты поиска и покупки недвижимости</p>
 			<div class="b-searching">
 				<div class="b-searching__appartment">
-					<input class="b-searching__appartment-input" type="text" name="searchAppartment" placeholder="Например, Астана Куйбышева...">
+					<input class="b-searching__appartment-input" type="text" name="searchAppartment" placeholder="Например, Астана Куйбышева">
 				</div>
 					
 				<div class="b-searching__selectorSale">Продажа</div>
@@ -38,239 +35,222 @@
 
 			</div>
 			
-			<div class="b-siteFace__radioBtns">
-				
-
-				<input class="b-siteFace__radioBtns__radio" type="radio" name="radio1" id="radio1">
-				<label for="radio1" class="b-siteFace__radioBtns__label"></label>
-				
-				<input class="b-siteFace__radioBtns__radio" type="radio" name="radio1" id="radio2">
-				<label class="b-siteFace__radioBtns__label" for="radio2"></label>
-				
-				<input class="b-siteFace__radioBtns__radio" type="radio" name="radio1" id="radio3">
-				<label class="b-siteFace__radioBtns__label" for="radio3"></label>
-				
-				<input class="b-siteFace__radioBtns__radio" type="radio" name="radio1" id="radio4">
-				<label class="b-siteFace__radioBtns__label" for="radio4"></label>
-				
+			<div class="b-siteFace__sliderSwitchers">
+				<span class="b-siteFace__sliderSwitchers__switcher"></span><span class="b-siteFace__sliderSwitchers__switcher b-siteFace__sliderSwitchers__switcher-active"></span><span class="b-siteFace__sliderSwitchers__switcher"></span><span class="b-siteFace__sliderSwitchers__switcher"></span>
 			</div>
 		</div>
 	</div>
 	
 	<main>
-		<div class="L-wrapper__content">
-			<h2 class="main__h2">Акции и спецпредложения</h2>
-			<p class="main__p">Не пропусти выгодное предложения на квартиры в новых домах!</p>
-			<div class="main__search">Весь Казахстан...</div>
-			<div class="main__leftPart">
-				<div class="apartment apartment-discount">
-					<img class="apartment__img" src="Img/apartment1.png">
-					<p class="apartment__description">ЖК  Набережный квартал 
+		<div class="L-wrapper__content b-main m-main-firstPart">
+			<h2 class="b-main__articleTitle">Акции и спецпредложения</h2>
+			<p class="b-main__subArticleTitle">Не пропусти выгодное предложения на квартиры в новых домах!</p>
+			<div class="b-main__search">Весь Казахстан</div>
+			<div class="b-main__leftPart">
+				<div class="b-apartment m-apartment-discount">
+					<img class="b-apartment__img" src="Img/apartment1.jpg">
+					<p class="b-apartment__description m-apartment__description-large">ЖК  Набережный квартал 
 					</p>
-					<p class="apartment__price">48 750 000 тг - 48 750 000 тг </p>
-					<p class="apartment__square">696 429 тг/м²</p>
-					<p class="apartment__street">ул. Каблукова, Алматы</p>
-					<div class="apartment__moreDiscounts">
-						<p class="apartment__moreDiscounts-p1">Калейдоскоп акций от BiGroup</p>
-						<p class="apartment__moreDiscounts-p2">Выбери свою акцию прямо сейчас!</p>
+					<p class="b-apartment__price m-apartment__price-large">48 750 000 тг - 48 750 000 тг </p>
+					<p class="b-apartment__square m-apartment__square-large">696 429 тг/м²</p>
+					<p class="b-apartment__street m-apartment__street-large">ул. Каблукова, Алматы</p>
+					<div class="b-apartment__moreDiscounts">
+						<p class="b-apartment__moreDiscounts__title">Калейдоскоп акций от BiGroup</p>
+						<p class="b-apartment__moreDiscounts__subTitle">Выбери свою акцию прямо сейчас!</p>
 					</div>
 				</div>
 			</div>
-			<div class="main__rightPart">
-				<div class="apartment apartment-discount">
-					<img class="apartment__img" src="Img/apartment2.png">
-					<p class="apartment__description">ЖК Абыр кырымыглы</p>
-					<p class="apartment__price">48 750 000 тг - 48 750 000 тг</p>
-					<p class="apartment__square">696 429 тг/м²</p>
-					<p class="apartment__street">ул. Каблукова, Алматы</p>
+			<div class="b-main__rightPart">
+				<div class="b-apartment m-apartment-discount">
+					<img class="b-apartment__img" src="Img/apartment2.jpg">
+					<p class="b-apartment__description m-apartment__description-small">ЖК Абыр кырымыглы</p>
+					<p class="b-apartment__price m-apartment__price-small">48 750 000 тг - 48 750 000 тг</p>
+					<p class="b-apartment__square m-apartment__square-medium">696 429 тг/м²</p>
+					<p class="b-apartment__street m-apartment__street-small">ул. Каблукова, Алматы</p>
 				</div>
 
-				<div class="apartment apartment-discount">
-					<img class="apartment__img" src="Img/apartment3.png">
-					<p class="apartment__description">ЖК Адмирал</p>
-					<p class="apartment__price">48 750 000 тг - 48 750 000 тг</p>
-					<p class="apartment__square">696 429 тг/м²</p>
-					<p class="apartment__street">ул. Каблукова, Алматы</p>
+				<div class="b-apartment m-apartment-discount">
+					<img class="b-apartment__img" src="Img/apartment3.jpg">
+					<p class="b-apartment__description m-apartment__description-small">ЖК Адмирал</p>
+					<p class="b-apartment__price m-apartment__price-small">48 750 000 тг - 48 750 000 тг</p>
+					<p class="b-apartment__square m-apartment__square-medium">696 429 тг/м²</p>
+					<p class="b-apartment__street m-apartment__street-small">ул. Каблукова, Алматы</p>
 				</div>
 
-				<div class="apartment apartment-discount">
-					<img class="apartment__img" src="Img/apartment4.png">
-					<p class="apartment__description">ЖК Овация</p>
-					<p class="apartment__price">48 750 000 тг - 48 750 000 тг</p>
-					<p class="apartment__square">696 429 тг/м²</p>
-					<p class="apartment__street">ул. Каблукова, Алматы</p>
+				<div class="b-apartment m-apartment-discount">
+					<img class="b-apartment__img" src="Img/apartment4.jpg">
+					<p class="b-apartment__description m-apartment__description-small">ЖК Овация</p>
+					<p class="b-apartment__price m-apartment__price-small">48 750 000 тг - 48 750 000 тг</p>
+					<p class="b-apartment__square m-apartment__square-medium">696 429 тг/м²</p>
+					<p class="b-apartment__street m-apartment__street-small">ул. Каблукова, Алматы</p>
 
 				</div>
 
-				<div class="apartment apartment-discount">
-					<img class="apartment__img" src="Img/apartment5.png">
-					<p class="apartment__description">ЖК Цилиндрик</p>
-					<p class="apartment__price">48 750 000 тг - 48 750 000 тг</p>
-					<p class="apartment__square">696 429 тг/м²</p>
-					<p class="apartment__street">ул. Каблукова, Алматы</p>
+				<div class="b-apartment m-apartment-discount">
+					<img class="b-apartment__img" src="Img/apartment5.jpg">
+					<p class="b-apartment__description m-apartment__description-small">ЖК Цилиндрик</p>
+					<p class="b-apartment__price m-apartment__price-small">48 750 000 тг - 48 750 000 тг</p>
+					<p class="b-apartment__square m-apartment__square-medium">696 429 тг/м²</p>
+					<p class="b-apartment__street m-apartment__street-small">ул. Каблукова, Алматы</p>
 				</div>
 			</div>
-			<button class="main__btn">Cмотреть все новостройки с акциями</button>
-			<hr class="main__hr">
+			<a href="#" class="b-main__link m-main__link-AllNewBild">Cмотреть все новостройки с акциями</a>
 		</div>
-		<div class="L-wrapper__content">
-			<h2 class="main__h2">Новые объявления</h2>
-			<p class="main__p">Каждую неделю более добавляется 350+ новых квартир, домов и участков</p>
-			<div class="main__search">Весь Казахстан...</div>
 
-			<div class="L-wrapper__content_forApartments">
-				<div class="apartment">
-					<img class="apartment__img" src="Img/apartment6.png">
-					<p class="apartment__description">2-комнатная квартира с современным ремонтом</p>
-					<p class="apartment__street">Акмолинская область,  Астана,  улица Иманбаевой</p>
-					<p class="apartment__price">48 750 000 тг</p>
-					<p class="apartment__square">696 429 тг/м2</p>	
+		<div class="L-wrapper__content b-main m-main-secondPart">
+			<h2 class="b-main__articleTitle">Новые объявления</h2>
+			<p class="b-main__subArticleTitle">Каждую неделю более добавляется 350+ новых квартир, домов и участков</p>
+			<div class="b-main__search">Весь Казахстан</div>
+
+			<div class="l-forApartments">
+				<div class="b-apartment">
+					<img class="b-apartment__img" src="Img/apartment6.jpg">
+					<p class="b-apartment__description m-apartment__description-small">2-комнатная квартира с современным ремонтом</p>
+					<p class="b-apartment__street m-apartment__street-large">Акмолинская область,  Астана,  улица Иманбаевой</p>
+					<p class="b-apartment__price m-apartment__price-small">48 750 000 тг</p>
+					<p class="b-apartment__square m-apartment__square-small">696 429 тг/м2</p>	
 				</div>
 
-				<div class="apartment">
-					<img class="apartment__img" src="Img/apartment7.png">
-					<p class="apartment__description">Продается 4-комнатная квартира в ЖК Арман, Женис 1</p>
-					<p class="apartment__street">Акмолинская область,  Астана,  улица Иманбаевой</p>
-					<p class="apartment__price">48 750 000 тг</p>
-					<p class="apartment__square">696 429 тг/м2</p>	
+				<div class="b-apartment">
+					<img class="b-apartment__img" src="Img/apartment7.jpg">
+					<p class="b-apartment__description m-apartment__description-small">Продается 4-комнатная квартира в ЖК Арман, Женис 1</p>
+					<p class="b-apartment__street m-apartment__street-large">Акмолинская область,  Астана,  улица Иманбаевой</p>
+					<p class="b-apartment__price m-apartment__price-small">48 750 000 тг</p>
+					<p class="b-apartment__square m-apartment__square-small">696 429 тг/м2</p>	
 				</div>
 
-				<div class="apartment">
-					<img class="apartment__img" src="Img/apartment8.png">
-					<p class="apartment__description">Шикарный 7-комнатный дом</p>
-					<p class="apartment__street">Акмолинская область,  Астана,  улица Иманбаевой</p>
-					<p class="apartment__price">48 750 000 тг</p>
-					<p class="apartment__square">696 429 тг/м2</p>	
+				<div class="b-apartment">
+					<img class="b-apartment__img" src="Img/apartment8.jpg">
+					<p class="b-apartment__description m-apartment__description-small">Шикарный 7-комнатный дом</p>
+					<p class="b-apartment__street m-apartment__street-large">Акмолинская область,  Астана,  улица Иманбаевой</p>
+					<p class="b-apartment__price m-apartment__price-small">48 750 000 тг</p>
+					<p class="b-apartment__square m-apartment__square-small">696 429 тг/м2</p>	
 				</div>
 
-				<div class="apartment">
-					<img class="apartment__img" src="Img/apartment9.png">
-					<p class="apartment__description">2-комнатная квартира в ЖК Лазурный квартал</p>
-					<p class="apartment__street">г. Астана, р-н Есиль, пр.Кабанбай батыр</p>
-					<p class="apartment__price">48 750 000 тг</p>
-					<p class="apartment__square">696 429 тг/м2</p>	
+				<div class="b-apartment">
+					<img class="b-apartment__img" src="Img/apartment9.jpg">
+					<p class="b-apartment__description m-apartment__description-small">2-комнатная квартира в ЖК Лазурный квартал</p>
+					<p class="b-apartment__street m-apartment__street-large">г. Астана, р-н Есиль, пр.Кабанбай батыр</p>
+					<p class="b-apartment__price m-apartment__price-small">48 750 000 тг</p>
+					<p class="b-apartment__square m-apartment__square-small">696 429 тг/м2</p>	
 				</div>
 			</div>
+
+			<a href="#" class="b-main__link m-main__link-toAds">Перейти к объявлениям</a>
 			
-			<button class="main__btn">Перейти к объявлениям</button>
-			
-			<div class="postAd">
-				<div class="postAd__leftPart">
-					<p class="postAd__leftPart__p">Нужно сначала продать чтобы купить?</p>
-					<button class="postAd__leftPart__btn">Разместите объявление</button>
+			<div class="b-postAd">
+				<p class="b-postAd__question">Нужно сначала продать<br>чтобы купить?</p>
+				<button class="b-postAd__postAdBtn">Разместите объявление</button>
+			</div>
+
+			<h2 class="b-main__articleTitle b-main__articleTitle-center">Наш блог</h2>
+
+			<div class="b-ourBlog">
+				<div class="b-ourBlog__block m-ourBlog__block-left">
+					<p class="b-ourBlog__block__head">Цены на вторичное жилье в Алматы (11.04-18.04)</p>
+					<span class="b-ourBlog__block__date m-ourBlog__block__date-left">25 апреля</span>
+					<span class="b-ourBlog__block__property">Рынок недвижимости Казахстана</span>
+					<p class="b-ourBlog__block__inform">В рамках еженедельного анализа цен на вторичную недвижимость Алматы, специалисты онлайн-площадки Homsters.kz предоставили обновленные данные.</p>
 				</div>
-				<div class="postAd__rightPart">
-					<img src="Img/post_ad.png">
+
+				<div class="b-ourBlog__block m-ourBlog__block-center">
+					<p class="b-ourBlog__block__head">Как купить квартиру в Казахстане в рассрочку от застройщика?</p>
+					<span class="b-ourBlog__block__date m-ourBlog__block__date-center">25 апреля</span>
+					<span class="b-ourBlog__block__property"> продажа недвижимости</span>
+					<p class="b-ourBlog__block__inform">По мнению Марины Грушиной, члена Объединенной ассоциации риелторов (ОАР) Казахстана, сейчас удачный момент для приобретения новой квартиры, особенно в рассрочку. Это объясняется кризисным снижением покупательского спроса, адекватно реагируя на которое застройщики снижают цены и охотно идут на уступки.</p>
+				</div>
+
+				<div class="b-ourBlog__block m-ourBlog__block-right">
+					<p class="b-ourBlog__block__head">Новая система начисления баллов для объявлений на Homsters.kz</p>
+					<span class="b-ourBlog__block__date m-ourBlog__block__date-right">25 апреля</span>
+					<span class="b-ourBlog__block__property"> продажа недвижимости</span>
+					<p class="b-ourBlog__block__inform">Онлайн-площадка Homsters.kz отображает все объявления на сайте по параметру качества. Чем больше информации об объекте вы дадите, тем выше в результатах поиска сайта окажется ваше объявление.</p>
 				</div>
 			</div>
 
-			<h2 class="main__h2 main__h2-center">Наш блог</h2>
-
-			<div class="ourBlog">
-				<div class="ourBlog__block ourBlog__block-left">
-					<p class="ourBlog__block__head">Цены на вторичное жилье в Алматы (11.04-18.04)</p>
-					<span class="ourBlog__block__date ourBlog__block__date-left">25 апреля</span>
-					<span class="ourBlog__block__property">Рынок недвижимости Казахстана</span>
-					<p class="ourBlog__block__inform">В рамках еженедельного анализа цен на вторичную недвижимость Алматы, специалисты онлайн-площадки Homsters.kz предоставили обновленные данные.</p>
-				</div>
-
-				<div class="ourBlog__block ourBlog__block-center">
-					<p class="ourBlog__block__head">Как купить квартиру в Казахстане в рассрочку от застройщика?</p>
-					<span class="ourBlog__block__date ourBlog__block__date-center">25 апреля</span>
-					<span class="ourBlog__block__property"> продажа недвижимости</span>
-					<p class="ourBlog__block__inform">По мнению Марины Грушиной, члена Объединенной ассоциации риелторов (ОАР) Казахстана, сейчас удачный момент для приобретения новой квартиры, особенно в рассрочку. Это объясняется кризисным снижением покупательского спроса, адекватно реагируя на которое застройщики снижают цены и охотно идут на уступки.</p>
-				</div>
-
-				<div class="ourBlog__block ourBlog__block-right">
-					<p class="ourBlog__block__head">Новая система начисления баллов для объявлений на Homsters.kz</p>
-					<span class="ourBlog__block__date ourBlog__block__date-right">25 апреля</span>
-					<span class="ourBlog__block__property"> продажа недвижимости</span>
-					<p class="ourBlog__block__inform">Онлайн-площадка Homsters.kz отображает все объявления на сайте по параметру качества. Чем больше информации об объекте вы дадите, тем выше в результатах поиска сайта окажется ваше объявление.</p>
-				</div>
-			</div>
-
-			<div class="main__referens  main__referens-toBlog">
-				<a class="main__referens__a" href="#">Перейти в блог</a>
+			<div class="l-wrapper__forReferens  m-l-wrapper__forReferens-toBlog">
+				<a class="b-main__referens" href="#">Перейти в блог</a>
 			</div>
 			
 
-			<h2 class="main__h2 main__h2-center">О нас пишут</h2>
-			<div class="aboutUs">
-				<p class="aboutUs__p">«Homsters — одна из немногих realty-площадок, которая предлагает действительно честую perfomance-driven модель и в конечном итоге выигрывает и рынок, и конечный  покупатель»</p>
-				<p class="aboutUs__capital">КАПИТАЛ(Казахстан)</p>
-				<div class="aboutUs__radioBtns">
-					<input class="aboutUs__radioBtns__radio" type="radio" name="radio2" id="radio5">
-					<label for="radio5" class="aboutUs__radioBtns__label"></label>
-					<input class="aboutUs__radioBtns__radio" type="radio" name="radio2" id="radio6">
-					<label class="aboutUs__radioBtns__label" for="radio6"></label>
-					<input class="aboutUs__radioBtns__radio" type="radio" name="radio2" id="radio7">
-					<label class="aboutUs__radioBtns__label" for="radio7"></label>
-					<input class="aboutUs__radioBtns__radio" type="radio" name="radio2" id="radio8">
-					<label class="aboutUs__radioBtns__label" for="radio8"></label>
+			<h2 class="b-main__articleTitle b-main__articleTitle-center">О нас пишут</h2>
+			<div class="b-aboutUs">
+				<p class="b-aboutUs__description">«Homsters — одна из немногих realty-площадок, которая предлагает действительно честую perfomance-driven модель и в конечном итоге выигрывает и рынок, и конечный  покупатель»</p>
+				<p class="b-aboutUs__capital">КАПИТАЛ(Казахстан)</p>
+			
+				<div class="b-aboutUs__sliderSwitchers">
+					<span class="b-aboutUs__sliderSwitchers__switcher m-aboutUs__sliderSwitchers__switcher-active"></span>
+					<span class="b-aboutUs__sliderSwitchers__switcher "></span>
+					<span class="b-aboutUs__sliderSwitchers__switcher"></span>
+					<span class="b-aboutUs__sliderSwitchers__switcher"></span>
 				</div>
 			</div>
 		</div>
-		<div class="articles">
-			<img class="articles__img" src="Img/article1.png">
-			<img class="articles__img" src="Img/article2.png">
-			<img class="articles__img" src="Img/article3.png">
-			<img class="articles__img" src="Img/article4.png">
-			<img class="articles__img" src="Img/article5.png">
-			<img class="articles__img" src="Img/article1.png">
+	<div class="L-wrapper__site">
+		<div class="b-articles">
+			<a href="#" class="b-articles__link m-articles__link-capital"></a>
+			<a href="#" class="b-articles__link m-articles__link-forbes"></a>
+			<a href="#" class="b-articles__link m-articles__link-ain"></a>
+			<a href="#" class="b-articles__link m-articles__link-logger"></a>
+			<a href="#" class="b-articles__link m-articles__link-delo"></a>
+			<a href="#" class="b-articles__link m-articles__link-capital"></a>
 		</div>
+	</div>	
+		
 
 		<div class="L-wrapper__content">
-			<div class="main__referens main__referens-toArticles">
-				<a class="main__referens__a" href="#">Перейти к списку статей</a>
+			<div class="l-wrapper__forReferens m-l-wrapper__forReferens-toArticle">
+				<a class="b-main__referens" href="#">Перейти к списку статей</a>
 			</div>
 
-			<h2 class="main__h2 main__h2-center">С Homsters просто!</h2>
+			<h2 class="b-main__articleTitle b-main__articleTitle-center">С Homsters просто!</h2>
+
+			<div class="b-clientele">
+				<input type="radio" name="radioForClient" class="b-clientele__radioForClient" id="radio1">
+				<label for="radio1" class="b-clientele__client">Покупателям</label>
+				<input type="radio" name="radioForClient" class="b-clientele__radioForClient" id="radio2">
+				<label for="radio2" class="b-clientele__client">Риелторам</label>
+				<input type="radio" name="radioForClient" class="b-clientele__radioForClient" id="radio3">
+				<label for="radio3" class="b-clientele__client">Застройщикам</label>
+			</div>
 		</div>
 
-		<div class="clientele">
-			<div class="clientele__client clientele__client-active">Покупателям</div>
-			<div class="clientele__client">Риелторам</div>
-			<div class="clientele__client">Застройщикам</div>
-		</div>
+		
 
 		<div class="L-wrapper__content">
-			<div class="benefits">
-				<div class="benefit">
-					<img src="Img/benefit1.png">
-					<p class="benefit__name">
+			<div class="l-benefits">
+				<div class="b-benefit m-benefit-inform">
+					<p class="b-benefit__name">
 						Качество информации
 					</p>
-					<p class="benefit__descriction">Наша система поднимает в поиске самые качественные объявления!</p>
+					<p class="b-benefit__descriction">Наша система поднимает в поиске самые качественные объявления!</p>
 				</div>
 
-				<div class="benefit">
-					<img src="Img/benefit2.png">
-					<p class="benefit__name">
+				<div class="b-benefit m-benefit-search">
+					<p class="b-benefit__name">
 						Точность поиска
 					</p>
-					<p class="benefit__descriction">Точный поиск, удобная система фильтров и сортировки</p>
+					<p class="b-benefit__descriction">Точный поиск, удобная система фильтров и сортировки</p>
 				</div>
 
-				<div class="benefit">
-					<img src="Img/benefit3.png">
-					<p class="benefit__name">
+				<div class="b-benefit m-benefit-phone">
+					<p class="b-benefit__name">
 						Простота связи
 					</p>
-					<p class="benefit__descriction">Просто оставьте заявку: продавец сам свяжется с вами</p>
+					<p class="b-benefit__descriction">Просто оставьте заявку: продавец сам свяжется с вами</p>
 				</div>
 
-				<div class="benefit">
-					<img src="Img/benefit3.png">
-					<p class="benefit__name">
+				<div class="b-benefit m-benefit-choose">
+					<p class="b-benefit__name">
 						Удобство выбора
 					</p>
-					<p class="benefit__descriction">Сохраняйте лучшие объявления, обсуждайте варианты с близкими прямо на homsters.</p>
+					<p class="b-benefit__descriction">Сохраняйте лучшие объявления, обсуждайте варианты с близкими прямо на homsters.</p>
 				</div>
 			</div>
 
-			<p class="main__p main__p-center">Давайте найдем Ваш новый дом!</p>
+			<p class="b-main__titleText-center">Давайте найдем Ваш новый дом!</p>
 			<div class="searchingAppartment">
-						<input class="searchingAppartment-input" type="text" name="searchAppartment" placeholder="Город, улица или название комплекса ...">
+						<input class="searchingAppartment-input" type="text" name="searchAppartment" placeholder="Город, улица или название комплекса">
 					</div>
 		</div>
 	</main>
