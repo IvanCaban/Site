@@ -247,14 +247,10 @@ body{
 
 .b-main{	
 	margin: 60px auto 0;
+	position: relative;
 }
-	.m-main-firstPart{
-		position: relative;
+	.m-main-withBorder{
 		border-bottom: 1px solid #D8E0E6;
-	}
-	
-	.m-main-secondPart{
-		position: relative;
 	}
 
 .b-main__articleTitle{
@@ -334,7 +330,8 @@ body{
 		.b-apartment__description{
 			margin: 0px 0px 7px;
 			font-weight: bold;
-			color: #0080C5; 
+			color: #0080C5;
+			line-height: 20px; 
 		}
 			.m-apartment__description-large{
 				font-size: 19px;
@@ -371,6 +368,7 @@ body{
 		.b-apartment__street{
 			margin: 7px 0px;
 			color: #425361;
+			line-height: 20px;
 		}
 			.m-apartment__street-large{
 				font-size: 14px;
@@ -552,25 +550,29 @@ body{
 			line-height: 20px;
 		}
 .l-wrapper__forReferens {
-	margin: 30px auto;
-	border-bottom: 1px solid #0080C5;
-	text-align: center;
-	padding-bottom: 2px;
+	
+	
+	
 }		
 	.b-main__referens:link, .b-main__referens:visited{
+		display: block;
+		margin: 30px auto;
+		padding-bottom: 2px;
 		font-size: 14px;
 		color: #0080C5;
 		text-decoration: none;
-
+		border-bottom: 1px solid #0080C5;
+		text-align: center;
 	}
 	.b-main__referens:hover{
 		color: #000;
+		border-color: #000;
 	}
-		.m-l-wrapper__forReferens-toBlog{
+		.m-main__forReferens-toBlog{
 			max-width: 106px;
 			margin: 40px auto 60px;
 		}
-		.m-l-wrapper__forReferens-toArticle{
+		.m-main__referens__forReferens-toArticle{
 			max-width: 169px;
 			margin-bottom: 60px;
 		}
@@ -778,6 +780,10 @@ body{
 			.m-footer__leftPart__title-separator{
 				margin-top:30px;
 			}
+		.b-footer__list__li{
+			display: block;
+			padding: 10px 0;
+		}
 
 		.b-footer__list__ref:link, .b-footer__list__ref:visited{
 			color: #C1CFDB;
@@ -787,9 +793,9 @@ body{
 			color: #000;
 		}
 			.m-footer__list__ref-leftP{
-				display: block;
+				
 				font-size: 14px;
-				padding: 10px 0;
+
 			}
 	.b-footer__rightPart{
 		width: 60%;
