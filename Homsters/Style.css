@@ -62,6 +62,7 @@ body{
 	width: 100%;
 	position: fixed;
 	z-index: 999;
+	box-shadow: 0px 0px 10px rgba(124, 124, 124, .5);
 }
 .b-header__content{	
 	font-size: 14px;
@@ -117,6 +118,9 @@ body{
 			background: #0AC59B;
 			cursor: pointer;
 		}
+			.b-header__adsBtn:hover{
+				background: #057255;
+			}
 		
 .b-siteFace{
 	background: url("Img/face.jpg") no-repeat;
@@ -216,6 +220,10 @@ body{
 			font-size: 18px;
 			font-weight: bold;
 		}
+			.b-searching__searchBtn:hover{
+				background: #BA6A13;
+			}
+			
 		.b-searching__searchBtn:before{
 			content: url("Img/search.svg");
 			float: left;
@@ -431,21 +439,19 @@ body{
 	.b-main__link:hover{
 		text-decoration: underline;
 	}
-}
-.L-forApartments{
-}
+
 .l-forApartments{
 	display: flex;
 }
 
-.l-forApartments > .b-apartment{
+.l-forApartments>.b-apartment{
 	float: left;
 	width: 23%;
 }
-.l-forApartments > .b-apartment:not(:nth-child(4n)){
+.l-forApartments>.b-apartment:not(:nth-child(4n)){
 	margin-right: 2.6666%;
 }
-.m-main__link-toAds	{
+.m-main__link-toAds{
 	max-width: 275px;
 }	
 .b-postAd{
@@ -473,6 +479,9 @@ body{
 			margin: 0px 0px 60px 80px;
 			cursor: pointer;
 		}
+			.b-postAd__postAdBtn:hover{
+				background: #BA6A13;
+			}
 
 .b-ourBlog{
 	width: 100%;
