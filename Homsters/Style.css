@@ -636,6 +636,10 @@ body{
 		width: 15%;
 		height: 90px;
 		margin-bottom: 60px;
+		transition: transform .5s;
+	}
+	.b-articles__link:hover{
+		transform: rotate(10deg);
 	}
 		.m-articles__link-capital{
 			background: url(Img/capital.png) no-repeat;
