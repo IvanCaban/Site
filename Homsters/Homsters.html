@@ -10,11 +10,27 @@
 <body>
 	<header class="b-header">
 		<div class="L-wrapper__site b-header__content">
+			
 			<a href="#" class="b-header__logo"><img src="Img/logo.svg" alt="Homsters" class="b-header__logo__img"></a>
-			<a href="#" class="b-header__newBuid">Новостройки</a>
-			<a href="#" class="b-header__secondProp">Вторичная недвижимость</a>
-			<a href="#" class="b-header__enter">Войти на сайт</a>
-			<button class="b-header__adsBtn">Разместить объявление</button>
+			
+			<nav class="b-header__navForPC">
+				<a href="#" class="b-header__navForPC__newBuid">Новостройки</a>
+				<a href="#" class="b-header__navForPC__secondProp">Вторичная недвижимость</a>
+				<a href="#" class="b-header__navForPC__enter">Войти на сайт</a>
+				<button class="b-header__navForPC__adsBtn">Разместить объявление</button>
+			</nav>
+			
+			<nav class="b-header__navForTableAndMob">
+				<label for="menuToggle" class="b-header__navForTableAndMob__menuToggle">Меню</label>
+				<input type="checkbox" name="toggle" id="menuToggle">
+				<ul class="b-header__navForTableAndMob__list">
+					<li><a class="b-header__navForTableAndMob__list__link" href="#">Новостройки</a></li>
+					<li><a class="b-header__navForTableAndMob__list__link" href="#">Вторичная недвижимость</a></li>
+					<li><a  class="b-header__navForTableAndMob__list__link" href="#">Войти на сайт</a></li>
+					<li><a  class="b-header__navForTableAndMob__list__link" href="#">Разместить объявление</a></li>
+				</ul>
+			</nav>
+			
 		</div>
 	</header>
 		
@@ -50,16 +66,20 @@
 
 			<div class="b-main__leftPart">
 				<div class="b-apartment m-apartment-discount">
-					<img class="b-apartment__img" src="Img/apartment1.jpg">
+					<div class="b-apartment__l-wrapper__forImg">
+						<img class="b-apartment__img" src="Img/apartment1.jpg">
+						<div class="b-apartment__moreDiscounts">
+						<p class="b-apartment__moreDiscounts__title">Калейдоскоп акций от BiGroup</p>
+						<p class="b-apartment__moreDiscounts__subTitle">Выбери свою акцию прямо сейчас!</p>
+					</div>
+					</div>
+					
 					<p class="b-apartment__description m-apartment__description-large">ЖК  Набережный квартал 
 					</p>
 					<p class="b-apartment__price m-apartment__price-large">48 750 000 тг - 48 750 000 тг </p>
 					<p class="b-apartment__square m-apartment__square-large">696 429 тг/м²</p>
 					<p class="b-apartment__street m-apartment__street-large">ул. Каблукова, Алматы</p>
-					<div class="b-apartment__moreDiscounts">
-						<p class="b-apartment__moreDiscounts__title">Калейдоскоп акций от BiGroup</p>
-						<p class="b-apartment__moreDiscounts__subTitle">Выбери свою акцию прямо сейчас!</p>
-					</div>
+					
 				</div>
 			</div>
 			<div class="b-main__rightPart">
@@ -143,8 +163,11 @@
 
 		<section  class="L-wrapper__content">
 			<div class="b-postAd">
-				<p class="b-postAd__question">Нужно сначала продать<br>чтобы купить?</p>
-				<button class="b-postAd__postAdBtn">Разместите объявление</button>
+				<div class="b-postAd-l-wrapper">
+					<p class="b-postAd__question">Нужно сначала продать чтобы купить?</p>
+					<button class="b-postAd__postAdBtn">Разместите объявление</button>
+				</div>
+				
 			</div>
 
 			<h2 class="b-main__articleTitle b-main__articleTitle-center">Наш блог</h2>
