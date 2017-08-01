@@ -98,16 +98,19 @@ body{
 		display: none;
 		position: absolute;
 		background: #fff;
-		top: 0px;
+		top: 45px;
 		right: 10px;	
 	}
 		.b-header__navForTableAndMob__menuToggle{
-			text-align: right;
 			color: #375262;
 			display: block;
-			font-size: 1.5em;
 			cursor: pointer;
-			padding: 8px 5px 16px;
+			position: absolute;
+			top: -40px;
+			right: 0px;
+			width: 32px;
+			height: 32px;
+			background: url("Img/toggleMenu.svg") no-repeat center;
 		}
 			#menuToggle{
 				display: none;
@@ -165,7 +168,8 @@ body{
 				width: 17%;
 				height: 40px;
 				border:none;
-				border-radius: 7px;
+				font-weight: bold;
+				border-radius: 5px;
 				color: #fff;
 				background: #0AC59B;
 				cursor: pointer;
@@ -177,6 +181,7 @@ body{
 .b-siteFace{
 	background: url("Img/face.jpg") no-repeat;
 	background-size: cover;
+	background-position: center center;
 	text-align: center;
 }	
 	.b-siteFace__title{
@@ -483,8 +488,8 @@ body{
 	display: block;
 	font-weight: bold;
 	color: #006AA5;
-	border:1px solid #C2D0DC;
-	border-radius: 10px;
+	border: 1px solid #C2D0DC;
+	border-radius: 5px;
 	background: #fff;
 	margin: 40px auto 50px;
 	box-sizing: border-box;
