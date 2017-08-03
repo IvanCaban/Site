@@ -65,6 +65,8 @@ body{
 	margin: 0 auto;
 	min-width: 320px;
 }
+
+/******************Хеадер**********************/
 .b-header{
 	background: #fff;
 	-webkit-box-sizing: border-box;
@@ -76,6 +78,7 @@ body{
 	        box-shadow: 0px 0px 10px rgba(124, 124, 124, .5);
 	height: 75px;
 	padding: 10px 0;
+	box-sizing: border-box;
 }	
 	.b-header__content{
 		-webkit-box-sizing: border-box;
@@ -91,36 +94,21 @@ body{
 		        justify-content: space-between;
 		padding: 0 10px;
 		position: relative;
-		height: 55px;
+
 	}
 	.b-header__logo__img{
-		height: 3em;
-		margin-right: 15px;
+		width: 12.5em;
+		height: auto;
 	}
 
-	.b-header__navForPC{
-		font-size: .87em;
-		font-weight: bold;
-		width: 85%;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
+		.b-header__nav{
+			background: #fff;
+			width: 90%;
+			-webkit-box-sizing: border-box;
+			        box-sizing: border-box;
 
-	}
-	.b-header__navForTableAndMob{
-		display: none;
-		position: absolute;
-		background: #fff;
-		top: 45px;
-		right: 10px;	
-	}
-		.b-header__navForTableAndMob__menuToggle{
+		}
+		.b-header__nav__menuToggle{
 			color: #375262;
 			display: block;
 			cursor: pointer;
@@ -134,74 +122,77 @@ body{
 			#menuToggle{
 				display: none;
 			}
-			#menuToggle:checked+.b-header__navForTableAndMob__list{
+
+			.b-header__nav__list{
+				width: 100%;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+			}
+			.b-header__nav__list__li{
+				text-align: center;
 				display: block;
+				margin: 0 1%;
 			}
-			.b-header__navForTableAndMob__list{
-				display: none;
-			}
-			.b-header__navForTableAndMob__list__link:link, .b-header__navForTableAndMob__list__link:visited{
+				.m-header__nav__list__li-newBuid{
+					width: 15%;
+				}
+				.m-header__nav__list__li-secondProp{
+					width: 20%;
+				}
+				.m-header__nav__list__li-enter{
+					width: 14%;
+					margin-left: 27%;
+					border-left: 1px solid #F5F5F5;
+					padding: 10px;
+				}
+				.m-header__nav__list__li-adsBtn{
+					width: 25%;
+				}
+
+			.b-header__nav__list__link:link, .b-header__nav__list__link:visited{
 				text-decoration: none;
 				color: #375262;
-				font-size: 1.2em;
-				display: block;
-				padding: 10px;
+				font-size: .87em;
+				font-weight: bold;
+				text-align: center;	
+		
 			}
-			.b-header__navForTableAndMob__list__link:hover{
-				background: #cecece;
-			}
-
-		.b-header__navForPC__newBuid:link, .b-header__navForPC__newBuid:visited{
-			text-decoration: none;
-			color: #375262;
-		}
-				.b-header__navForPC__newBuid:hover{
-					text-decoration: underline;
-				}
-			.b-header__navForPC__secondProp{
-				margin-right: 40%;
+			.b-header__nav__list__link:hover{
+				text-decoration: underline;
 			}
 
-			.b-header__navForPC__secondProp:link, .b-header__navForPC__secondProp:visited{
-				text-decoration: none;
-				color: #375262;
-				text-align: center;
-			}
-				.b-header__navForPC__secondProp:hover{
-					text-decoration: underline;
-				}
-			.b-header__navForPC__enter:link, .b-header__navForPC__enter:visited {	
-				text-decoration: none;
-				color: #425361;
-				border-left: 1px solid #F5F5F5;
-				padding: 20px 0px;
-				width: 12%;
-				text-align: center;
-				
-			}
-				.b-header__navForPC__enter:hover{
-					text-decoration: underline;
-				}
-
-			.b-header__navForPC__adsBtn{
-				width: 17%;
+			.m-header__nav__list__link-adsBtn{
 				height: 40px;
 				border:none;
-				font-weight: bold;
 				border-radius: 5px;
 				color: #fff;
 				background: #0AC59B;
 				cursor: pointer;
+				padding: 0px 20px;
 			}
-				.b-header__navForPC__adsBtn:hover{
-					background: #057255;
+				.m-header__nav__list__link-adsBtn>span{
+					font-weight: bold;
+					font-family: "Noto Sans";
+					font-size: 14px;
 				}
+				.m-header__nav__list__link-adsBtn:hover{
+					background: #057255;
+					text-decoration: none;
+				}
+
+
+/***************Лицо-сайта**********************/
 			
 .b-siteFace{
 	background: url("Img/face.jpg") no-repeat;
 	background-size: cover;
 	background-position: center center;
 	text-align: center;
+	background-attachment: fixed;
 }	
 	.b-siteFace__title{
 		color: #fff;
@@ -337,6 +328,8 @@ body{
 		.b-siteFace__sliderSwitchers__switcher-active{
 			background: #fff;
 		}	
+
+/*******************Контент**********************/
 
 .b-main{	
 	margin: 60px auto 0;
@@ -921,6 +914,9 @@ body{
 			left: 0px;
 			z-index: -5;
 		}
+
+/**************Футер******************/
+
 .b-footer{
 	background: #375262;
 	padding: 40px;
@@ -1033,9 +1029,13 @@ body{
 	body{
 		font-size: 16px;
 	}
-	.b-header__navForPC__secondProp{
-		margin-right: 20%;
+	.b-header__nav__list{
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
+
 	.b-articles__link{
 		width: 32%;
 	}
@@ -1045,16 +1045,29 @@ body{
 		.m-main__referens__forReferens-toArticle{
 			max-width: 168px;
 		}
-	
+	.m-header__nav__list__li-enter{
+		margin-left: 18%;
+	}
 
 }
 @media screen and (min-width: 769px) and (max-width: 992px){
 	body{
 		font-size: 15px;
-	}	
-	.b-header__navForPC__secondProp{
-		margin-right: 10%;
 	}
+	.b-header__nav__list{
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+	}
+
+	.m-header__nav__list__li-enter{
+		margin-left: 15%;
+	}
+		.m-header__nav__list__link-adsBtn>span{
+			font-size: 13px;
+		}	
+
 	.b-articles__link{
 		width: 32%;
 	}
@@ -1097,12 +1110,60 @@ body{
 		.b-header__content{
 			height: 35px;
 		}
-		.b-header__navForPC{
-			display: none;
+		.b-header__nav{
+			position: absolute;
+			top: 45px;
+			right: 15px;
+			width: 50%;
+			padding: 0 10px;
 		}
-		.b-header__navForTableAndMob{
+			#menuToggle:checked+.b-header__nav__list{
+				display: block;
+			}
+		.b-header__nav__list{
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			display: none;
+			padding: 0px;
+
+		}
+		.b-header__nav__menuToggle{
 			display: block;
 		}
+			.m-header__nav__list__li-newBuid,
+			.m-header__nav__list__li-secondProp,
+			.m-header__nav__list__li-enter,
+			.m-header__nav__list__li-adsBtn{
+				text-align: left;
+				margin: 0px;
+				width: 100%;
+				border: none;
+				display: block;
+				padding: 10px;
+
+			}
+			.b-header__nav__list__link{
+				width: 100%;
+				text-align: left;
+			}
+			.m-header__nav__list__link-adsBtn{
+				background: #fff;
+				color: #375262;
+				font-weight: bold;
+				padding: 0px 0px 25px;
+				margin: 0px;
+				height: 0px;
+			}
+				.m-header__nav__list__link-adsBtn>span{
+					font-size: 12px;
+				}
+				.m-header__nav__list__link-adsBtn:hover{
+					text-decoration: underline;
+					background-color: #fff;
+				}
+
 	.b-searching{
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
@@ -1199,12 +1260,57 @@ body{
 		.b-header__content{
 			height: 35px;
 		}
-		.b-header__navForPC{
-			display: none;
+		.b-header__nav{
+			position: absolute;
+			top: 45px;
+			right: 15px;
+			width: 50%;
+			padding: 0 10px;
 		}
-		.b-header__navForTableAndMob{
+			#menuToggle:checked+.b-header__nav__list{
+				display: block;
+			}
+		.b-header__nav__list{
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			display: none;
+
+		}
+		.b-header__nav__menuToggle{
 			display: block;
 		}
+			.m-header__nav__list__li-newBuid,
+			.m-header__nav__list__li-secondProp,
+			.m-header__nav__list__li-enter,
+			.m-header__nav__list__li-adsBtn{
+				text-align: left;
+				margin: 0px;
+				width: 100%;
+				border: none;
+				display: block;
+				padding: 10px 3px;
+			}
+			.b-header__nav__list__link{
+				width: 100%;
+				text-align: left;
+			}
+			.m-header__nav__list__link-adsBtn{
+				background: #fff;
+				color: #375262;
+				font-weight: bold;
+				padding: 0px 0px 25px;
+				margin: 0px;
+				height: 0px;
+			}
+				.m-header__nav__list__link-adsBtn>span{
+					font-size: 10.3px;
+				}
+				.m-header__nav__list__link-adsBtn:hover{
+					text-decoration: underline;
+					background-color: #fff;
+				}
 	
 	.b-searching{
 		-ms-flex-wrap: wrap;
@@ -1313,13 +1419,57 @@ body{
 		.b-header__content{
 			height: 35px;
 		}
-		.b-header__navForPC{
-			display: none;
+		.b-header__nav{
+			position: absolute;
+			top: 45px;
+			right: 15px;
+			width: 50%;
+			padding: 0 10px;
 		}
-		.b-header__navForTableAndMob{
+			#menuToggle:checked+.b-header__nav__list{
+				display: block;
+			}
+		.b-header__nav__list{
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			    -ms-flex-direction: column;
+			        flex-direction: column;
+			display: none;
+
+		}
+		.b-header__nav__menuToggle{
 			display: block;
 		}
-	
+			.m-header__nav__list__li-newBuid,
+			.m-header__nav__list__li-secondProp,
+			.m-header__nav__list__li-enter,
+			.m-header__nav__list__li-adsBtn{
+				text-align: left;
+				margin: 0px;
+				width: 100%;
+				border: none;
+				display: block;
+				padding: 10px;
+			}
+			.b-header__nav__list__link{
+				width: 100%;
+				text-align: left;
+			}
+			.m-header__nav__list__link-adsBtn{
+				background: #fff;
+				color: #375262;
+				font-weight: bold;
+				padding: 0px 0px 25px;
+				margin: 0px;
+				height: 0px;
+			}
+				.m-header__nav__list__link-adsBtn>span{
+					font-size: 9px;
+				}
+				.m-header__nav__list__link-adsBtn:hover{
+					text-decoration: underline;
+					background-color: #fff;
+				}
 		.b-searching{
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
