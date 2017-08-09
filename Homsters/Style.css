@@ -247,21 +247,28 @@ body{
 				outline: none;
 				border: none;
 				font-size: 1.125em;
+				line-height: 1.125em;
 				-o-text-overflow: ellipsis;
 				   text-overflow: ellipsis;
 				white-space: nowrap;
 				color: #425361;
 
 			}
-
+				.b-searching__appartment-input:focus::-webkit-input-placeholder {color: transparent}
+				.b-searching__appartment-input:focus::-moz-placeholder{color: transparent}
+				.b-searching__appartment-input:focus:-moz-placeholder{color: transparent}
+				.b-searching__appartment-input:focus:-ms-input-placeholder{color: transparent}
+		
 		.b-searching__selectorSale, .b-searching__selectorAppartment{
-			height: 60px;		
+			height: 60px;
+			font-size: 1.12em;
+			line-height: 1.12em;		
 			width: 15%;	
+			padding-left: 10px;
 			background: #fff;
 			-webkit-box-sizing: border-box;
 			        box-sizing: border-box;
 			text-align: left;
-			padding: 20px;
 			border-radius: 5px;
 			position: relative;
 			-o-text-overflow: ellipsis;
@@ -270,18 +277,7 @@ body{
 			color: #425361;
 		}
 
-			.b-searching__selectorSale:after, .b-searching__selectorAppartment:after{
-				content: url("Img/bracket.svg");
-				position: absolute;
-				width: 15px;
-				right: 10px;
-				top: 20px;
-				cursor: pointer;
-				-webkit-box-sizing: border-box;
-				        box-sizing: border-box;
-				padding: 0 2px;
-
-			}
+	
 
 		.b-searching__searchBtn{
 			width: 15%;
@@ -293,6 +289,7 @@ body{
 			position: relative;
 			cursor: pointer;
 			font-size: 1.12em;
+			line-height: 1.12em;
 			font-weight: bold;
 
 		}
@@ -308,11 +305,11 @@ body{
 			position: absolute;
 			top: 20px;
 			left: 15px;
+			box-sizing: border-box;
 		}
 
 	.b-siteFace__sliderSwitchers{
-		margin: 40px auto 0;
-		padding-bottom: 40px;
+		padding: 40px 0;
 		font-size: .7em;
 
 	}
@@ -350,6 +347,7 @@ body{
 .b-main__subArticleTitle{
 	font-size: 1.25em;
 	color: #425361;
+	line-height: 1.25em;
 }
 
 .b-main__search{
@@ -357,14 +355,13 @@ body{
 	   text-overflow: ellipsis;
 	white-space: nowrap;
 	font-size: .87em;
+	padding: 13px 20px;
 	font-weight: bold;
 	color: #8596A4;
 	border-radius: 5px;
 	border: 1px solid #8596A4;
 	width: 20%;
-	height: 40px;
 	text-align: center;
-	padding: 12px 40px 10px;
 	position: absolute;
 	overflow: hidden;
 	top: 0px;
@@ -664,12 +661,12 @@ body{
 		.b-ourBlog__block__property{
 			font-size: .75em;
 			color: #425361;
-			line-height: 25px;
+			line-height: 1.7em;
 		}
 		.b-ourBlog__block__inform{
 			font-size: .87em;
 			color: #425361;
-			line-height: 1.25em;
+			line-height: 1.7em;
 		}
 	
 	.b-main__referens:link, .b-main__referens:visited{
@@ -877,6 +874,7 @@ body{
 	font-weight: bold;
 	font-size: 1em;
 	}
+
 .b-searchingAppartment{
 		margin: 20px auto 80px;	
 		position: relative;
@@ -902,6 +900,11 @@ body{
 			color: #8596A4;
 
 		}
+			.b-searchingAppartment-input:focus::-webkit-input-placeholder {color: transparent}
+			.b-searchingAppartment-input:focus::-moz-placeholder{color: transparent}
+			.b-searchingAppartment-input:focus:-moz-placeholder{color: transparent}
+			.b-searchingAppartment-input:focus:-ms-input-placeholder{color: transparent}
+		
 		.b-searchingAppartment:before{
 			content: url("Img/location.svg");
 			height: 60px;
@@ -1113,9 +1116,9 @@ body{
 		.b-header__nav{
 			position: absolute;
 			top: 45px;
-			right: 15px;
-			width: 50%;
-			padding: 0 10px;
+			right: 0px;
+			width: 100%;
+			padding: 0px;
 		}
 			#menuToggle:checked+.b-header__nav__list{
 				display: block;
@@ -1128,42 +1131,70 @@ body{
 			display: none;
 			padding: 0px;
 
+
 		}
 		.b-header__nav__menuToggle{
 			display: block;
+			position: absolute;
+			right: 15px;
 		}
 			.m-header__nav__list__li-newBuid,
 			.m-header__nav__list__li-secondProp,
 			.m-header__nav__list__li-enter,
 			.m-header__nav__list__li-adsBtn{
-				text-align: left;
 				margin: 0px;
 				width: 100%;
+				padding: 0px;
 				border: none;
 				display: block;
-				padding: 10px;
-
 			}
-			.b-header__nav__list__link{
+			.b-header__nav__list__link:link, .b-header__nav__list__link:visited{
 				width: 100%;
-				text-align: left;
+				margin: 0 auto;
+				white-space: nowrap;
+				display: flex;
+				padding: 20px;
+				font-size: 16px;
+				transition: color .25s, background .25s;
 			}
+				.b-header__nav__list__link:hover{
+					text-decoration: none;
+					background: #777;
+					color: #fff;
+				}
 			.m-header__nav__list__link-adsBtn{
 				background: #fff;
 				color: #375262;
 				font-weight: bold;
-				padding: 0px 0px 25px;
 				margin: 0px;
-				height: 0px;
+				display: block;
+				text-align: left;
+				padding: 0px 20px;
+				height: 56px;
+				width: 100%;
+				border: none;
+				border-radius: 0px;
+
 			}
+				.m-header__nav__list__link-adsBtn:focus{
+					border:none;
+					outline: none;
+				}
 				.m-header__nav__list__link-adsBtn>span{
-					font-size: 12px;
+					font-size: 16px;
 				}
 				.m-header__nav__list__link-adsBtn:hover{
-					text-decoration: underline;
-					background-color: #fff;
+					text-decoration: none;
+					background: #777;
+					color: #fff;
 				}
 
+	.b-siteFace__title {
+		padding: 190px 0px 40px;
+	}
+	.b-siteFace__subTitle{
+		padding-bottom: 60px;
+	}
 	.b-searching{
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
@@ -1171,10 +1202,30 @@ body{
 		.b-searching__appartment{
 			margin: 0px 0px 20px;
 			width: 100%;
+			height: 50px;
+			padding: 0px 0px 0px 50px;
 		}
+			.b-searching__appartment:before{
+				height: 50px;
+				width: 50px;
+				padding: 13px 16px 10px ;
+			}
+			.b-searching__appartment-input{
+				height: 50px;
+			}
 		.b-searching__selectorAppartment, .b-searching__searchBtn, .b-searching__selectorSale{
 			width: 32%;
+			height: 50px;
 		}
+			.b-searching__searchBtn:before{
+				top: 16px;
+				left: 13px;
+				padding: 1px 2px ;
+			}
+
+	.b-siteFace__sliderSwitchers{
+		padding: 30px 0;
+	}	
 	.b-main__search{
 		position: relative;
 		display: block;
@@ -1198,7 +1249,7 @@ body{
 		.m-apartment-discount:before{
 			padding: 8px 12px;
 		}
-
+	
 	.l-forApartments>.b-apartment{
 		width: 49%;
 	}	
@@ -1231,6 +1282,18 @@ body{
 		width: 48%;
 		margin-top: 10px;
 	}
+	.b-searchingAppartment{
+		height: 50px;
+	}
+	.b-searchingAppartment:before{
+		height: 50px;
+		width: 50px;
+		padding: 12px 15px;
+	}
+		.b-searchingAppartment-input{
+			height: 50px;
+			margin: 0 0 0 50px;
+		}
 	.b-footer{
 		padding: 30px;
 	}
@@ -1252,7 +1315,7 @@ body{
 }
 @media screen and (min-width: 321px) and (max-width: 480px){
 	body{
-		font-size: 12px;
+		font-size: 14px;
 	}
 	.b-header{
 		height: 55px;
@@ -1263,9 +1326,9 @@ body{
 		.b-header__nav{
 			position: absolute;
 			top: 45px;
-			right: 15px;
-			width: 50%;
-			padding: 0 10px;
+			right: 0px;
+			width: 100%;
+			padding: 0px;
 		}
 			#menuToggle:checked+.b-header__nav__list{
 				display: block;
@@ -1276,42 +1339,71 @@ body{
 			    -ms-flex-direction: column;
 			        flex-direction: column;
 			display: none;
+			padding: 0px;
+
 
 		}
 		.b-header__nav__menuToggle{
 			display: block;
+			position: absolute;
+			right: 15px;
 		}
 			.m-header__nav__list__li-newBuid,
 			.m-header__nav__list__li-secondProp,
 			.m-header__nav__list__li-enter,
 			.m-header__nav__list__li-adsBtn{
-				text-align: left;
 				margin: 0px;
 				width: 100%;
+				padding: 0px;
 				border: none;
 				display: block;
-				padding: 10px 3px;
 			}
-			.b-header__nav__list__link{
+			.b-header__nav__list__link:link, .b-header__nav__list__link:visited{
 				width: 100%;
-				text-align: left;
+				margin: 0 auto;
+				white-space: nowrap;
+				display: flex;
+				padding: 20px;
+				font-size: 16px;
+				transition: color .25s, background .25s;
 			}
+				.b-header__nav__list__link:hover{
+					text-decoration: none;
+					background: #777;
+					color: #fff;
+				}
 			.m-header__nav__list__link-adsBtn{
 				background: #fff;
 				color: #375262;
 				font-weight: bold;
-				padding: 0px 0px 25px;
 				margin: 0px;
-				height: 0px;
+				display: block;
+				text-align: left;
+				padding: 0px 20px;
+				height: 56px;
+				width: 100%;
+				border: none;
+				border-radius: 0px;
+
 			}
+				.m-header__nav__list__link-adsBtn:focus{
+					border:none;
+					outline: none;
+				}
 				.m-header__nav__list__link-adsBtn>span{
-					font-size: 10.3px;
+					font-size: 16px;
 				}
 				.m-header__nav__list__link-adsBtn:hover{
-					text-decoration: underline;
-					background-color: #fff;
+					text-decoration: none;
+					background: #777;
+					color: #fff;
 				}
-	
+	.b-siteFace__title{
+		padding: 190px 0px 40px;
+	}			
+	.b-siteFace__subTitle{
+		padding-bottom: 50px;
+	}
 	.b-searching{
 		-ms-flex-wrap: wrap;
 		    flex-wrap: wrap;
@@ -1319,15 +1411,36 @@ body{
 		.b-searching__appartment{
 			margin: 0px 0px 20px;
 			width: 100%;
+			height: 40px;
+			padding: 0px 0px 0px 40px;
 		}
+
+			.b-searching__appartment:before{
+				height: 40px;
+				width: 40px;
+				padding: 10px 12px 9px;
+			}
+			.b-searching__appartment-input{
+				height: 40px;
+			}
 		.b-searching__selectorAppartment, .b-searching__selectorSale{
 			width: 48%;
 			margin-bottom: 20px;
-			padding-top: 22px;
+			height: 40px;
 		}
 		.b-searching__searchBtn{
 			width: 100%;
+			height: 40px;
 		}
+			.b-searching__searchBtn:before{
+				padding: 0px;
+				top: 11px;
+				left: 11px;
+			}
+	.b-siteFace__sliderSwitchers{
+		padding: 20px 0;
+	}
+
 	.b-main__search{
 		position: relative;
 		display: block;
@@ -1361,6 +1474,7 @@ body{
 	.b-postAd{	
 		background-size: 20%;	
 		background-position: 95%;
+		margin: 0px auto 55px;
 	}
 		.b-postAd__question{
 			margin: 40px 0px 10px 30px;
@@ -1369,6 +1483,10 @@ body{
 			padding: 7px 25px;
 			margin: 0px 0px 20px 30px;
 		}
+
+.b-ourBlog{
+	margin: 30px auto;
+}
 	.b-ourBlog__block{
 		width: 100%;
 		margin: 20px auto;
@@ -1387,6 +1505,20 @@ body{
 		margin-top: 10px;
 	}
 
+	.b-searchingAppartment{
+		margin: 20px auto 50px;
+		height: 40px;
+	}	
+	
+	.b-searchingAppartment:before{
+		height: 40px;
+		width: 40px;
+		padding: 10px 13px;
+	}
+		.b-searchingAppartment-input{
+			height: 40px;
+			margin: 0 0 0 40px;
+		}
 	.b-footer{
 		padding: 20px;
 	}
@@ -1411,7 +1543,7 @@ body{
 }
 @media screen and (min-width: 0px) and (max-width: 320px){
 	body{
-		font-size: 10px;
+		font-size: 13px;
 	}
 	.b-header{
 		height: 55px;
@@ -1422,9 +1554,9 @@ body{
 		.b-header__nav{
 			position: absolute;
 			top: 45px;
-			right: 15px;
-			width: 50%;
-			padding: 0 10px;
+			right: 0px;
+			width: 100%;
+			padding: 0px;
 		}
 			#menuToggle:checked+.b-header__nav__list{
 				display: block;
@@ -1435,57 +1567,106 @@ body{
 			    -ms-flex-direction: column;
 			        flex-direction: column;
 			display: none;
+			padding: 0px;
+
 
 		}
 		.b-header__nav__menuToggle{
 			display: block;
+			position: absolute;
+			right: 15px;
 		}
 			.m-header__nav__list__li-newBuid,
 			.m-header__nav__list__li-secondProp,
 			.m-header__nav__list__li-enter,
 			.m-header__nav__list__li-adsBtn{
-				text-align: left;
 				margin: 0px;
 				width: 100%;
+				padding: 0px;
 				border: none;
 				display: block;
-				padding: 10px;
 			}
-			.b-header__nav__list__link{
+			.b-header__nav__list__link:link, .b-header__nav__list__link:visited{
 				width: 100%;
-				text-align: left;
+				margin: 0 auto;
+				white-space: nowrap;
+				display: flex;
+				padding: 20px;
+				font-size: 16px;
+				transition: color .25s, background .25s;
 			}
+				.b-header__nav__list__link:hover{
+					text-decoration: none;
+					background: #777;
+					color: #fff;
+				}
 			.m-header__nav__list__link-adsBtn{
 				background: #fff;
 				color: #375262;
 				font-weight: bold;
-				padding: 0px 0px 25px;
 				margin: 0px;
-				height: 0px;
+				display: block;
+				text-align: left;
+				padding: 0px 20px;
+				height: 56px;
+				width: 100%;
+				border: none;
+				border-radius: 0px;
+
 			}
+				.m-header__nav__list__link-adsBtn:focus{
+					border:none;
+					outline: none;
+				}
 				.m-header__nav__list__link-adsBtn>span{
-					font-size: 9px;
+					font-size: 16px;
 				}
 				.m-header__nav__list__link-adsBtn:hover{
-					text-decoration: underline;
-					background-color: #fff;
+					text-decoration: none;
+					background: #777;
+					color: #fff;
 				}
+
+		.b-siteFace__subTitle{
+			padding-bottom: 40px;
+		}
 		.b-searching{
 			-ms-flex-wrap: wrap;
 			    flex-wrap: wrap;
 		}
-			.b-searching__appartment{
-				margin: 0px 0px 20px;
-				width: 100%;
+		.b-searching__appartment{
+			margin: 0px 0px 20px;
+			width: 100%;
+			height: 40px;
+			padding: 0px 0px 0px 40px;
+		}
+
+			.b-searching__appartment:before{
+				height: 40px;
+				width: 40px;
+				padding: 10px 12px 9px;
 			}
-			.b-searching__selectorAppartment, .b-searching__selectorSale{
-				width: 48%;
-				margin-bottom: 20px;
-				padding-top: 22px;
+			.b-searching__appartment-input{
+				height: 40px;
 			}
-			.b-searching__searchBtn{
-				width: 100%;
+		.b-searching__selectorAppartment, .b-searching__selectorSale{
+			width: 48%;
+			margin-bottom: 20px;
+			height: 40px;
+		}
+		.b-searching__searchBtn{
+			width: 100%;
+			height: 40px;
+		}
+			.b-searching__searchBtn:before{
+				padding: 0px;
+				top: 11px;
+				left: 11px;
 			}
+
+	.b-siteFace__sliderSwitchers{
+		padding: 15px 0;
+	}
 	.b-main__search{
 		position: relative;
 		display: block;
@@ -1519,6 +1700,7 @@ body{
 	.b-postAd{	
 		background-size: 20%;	
 		background-position: 95%;
+		margin: 0px auto 35px;
 	}
 		.b-postAd__question{
 			margin: 40px 0px 10px 20px;
@@ -1526,7 +1708,10 @@ body{
 		.b-postAd__postAdBtn{
 			padding: 5px 15px;
 			margin: 0px 0px 20px 20px;
-		}	
+		}
+.b-ourBlog{
+	margin: 20px auto;
+}			
 	.b-ourBlog__block{
 		width: 100%;
 		margin: 20px auto;
@@ -1544,7 +1729,20 @@ body{
 		width: 100%;
 		margin-top: 10px;
 	}	
-
+	.b-searchingAppartment{
+		margin: 20px auto 50px;
+		height: 40px;
+	}	
+	
+	.b-searchingAppartment:before{
+		height: 40px;
+		width: 40px;
+		padding: 10px 13px;
+	}
+		.b-searchingAppartment-input{
+			height: 40px;
+			margin: 0 0 0 40px;
+		}
 	.b-footer{
 		padding: 10px;
 	}
@@ -1559,7 +1757,7 @@ body{
 			}
 		.b-footer__rightPart{
 			margin-top: 10px;
-			width: 100%;
+			width: 90%;
 			border: none;
 			padding: 0px;
 		}		

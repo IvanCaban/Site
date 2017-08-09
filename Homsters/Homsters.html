@@ -4,7 +4,7 @@
 	<title>Homsters</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="Style.css">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width" initial-scale=1>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <body>
@@ -47,9 +47,17 @@
 					<input class="b-searching__appartment-input" type="text" name="searchAppartment" placeholder="Например, Астана Куйбышева">
 				</div>
 					
-				<div class="b-searching__selectorSale">Продажа</div>
+				<select class="b-searching__selectorSale">
+					<option>Продажа</option>
+					<option>Покупка</option> 
+					<option>Аренда</option>  
+				</select>
 
-				<div class="b-searching__selectorAppartment">Квартира</div>
+				<select class="b-searching__selectorAppartment">
+					<option>Квартира</option>
+					<option>Дом</option>
+					<option>Дача</option> 
+				</select>
 
 				<button class="b-searching__searchBtn">Найти</button>
 
