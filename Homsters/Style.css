@@ -591,16 +591,19 @@ body{
 	border-radius: 10px;
 	margin: 0px auto 95px;
 	background: url("Img/post_ad.png") no-repeat;
-	background-position: 75%;
+	background-position: right 10% center;
+	background-size: 180px auto;
 }
 	.b-postAd-l-wrapper{
 		width: 55%;
 		margin: 0px;
+		padding: 10%;
+		box-sizing: border-box;
 	}
 		.b-postAd__question{
 			color: #006AA5;
 			font-size: 2em;
-			margin: 90px 0px 30px 80px;
+			padding-bottom: 5%;
 		}
 		.b-postAd__postAdBtn{
 			color: #fff;
@@ -611,8 +614,8 @@ body{
 			outline: none;
 			padding: 20px 55px;
 			border-radius: 5px;
-			margin: 0px 0px 60px 80px;
 			cursor: pointer;
+			white-space: nowrap;
 		}
 			.b-postAd__postAdBtn:hover{
 				background: #BA6A13;
@@ -824,14 +827,13 @@ body{
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	flex-wrap: wrap;
 	padding: 0;
 	border-radius: 20px;
 	overflow: hidden;
 	
 	-webkit-box-align: center;
-	
 	    -ms-flex-align: center;
-	
 	        align-items: center;
 
 }
@@ -1167,17 +1169,7 @@ body{
 		.b-searching__selectorAppartment, .b-searching__searchBtn, .b-searching__selectorSale{
 			width: 32%;
 		}
-	.b-postAd{
-		background-position: 85%;
-		background-size: 15%;	
-	}
-		.b-postAd__question{
-			margin: 70px 0px 25px 60px;
-		}
-		.b-postAd__postAdBtn{
-			padding: 15px 45px;
-			margin: 0px 0px 50px 60px;
-		}	
+
 
 }
 @media screen and (min-width: 481px) and (max-width: 768px){
@@ -1334,21 +1326,21 @@ body{
 	.b-articles__link{
 		width: 49%;
 	}
-	.b-postAd{	
-		background-size: 15%;		
-		background-position: 90%;
-	}
-		.b-postAd__question{
-			margin: 50px 0px 15px 45px;
-		}
-		.b-postAd__postAdBtn{
-			padding: 10px 35px;
-			margin: 0px 0px 40px 45px;
-		}
+
 	.b-ourBlog__block{
 		width: 49%;
 		margin: 20px auto;
 	}
+	.b-postAd{	
+		background-size: auto;	
+		background-position:  center top 30px;
+		margin: 0px auto 55px;
+	}
+		.b-postAd-l-wrapper{
+			text-align: center;
+			width: 100%;
+			padding-top: 250px;
+		}
 
 
 	.b-benefit{
@@ -1550,17 +1542,19 @@ body{
 		width: 100%;
 	}
 	.b-postAd{	
-		background-size: 20%;	
-		background-position: 95%;
+		background-size: auto;	
+		background-position:  center top 30px;
 		margin: 0px auto 55px;
 	}
-		.b-postAd__question{
-			margin: 40px 0px 10px 30px;
+		.b-postAd-l-wrapper{
+			text-align: center;
+			width: 100%;
+			padding-top: 250px;
 		}
-		.b-postAd__postAdBtn{
-			padding: 7px 25px;
-			margin: 0px 0px 20px 30px;
-		}
+			.b-postAd__postAdBtn{
+				padding: 15px 40px;
+			}
+
 
 .b-ourBlog{
 	margin: 30px auto;
@@ -1572,6 +1566,10 @@ body{
 		.b-ourBlog__block__head{
 			margin-bottom: 5px;
 		}
+
+.b-clientele__client{
+	width: 100%;
+}
 
 	.b-benefit{
 		width: 48%;
@@ -1774,17 +1772,20 @@ body{
 		width: 100%;
 	}
 	.b-postAd{	
-		background-size: 20%;	
-		background-position: 95%;
-		margin: 0px auto 35px;
+		background-size: auto;	
+		background-position:  center top 30px;
+		margin: 0px auto 40px;
 	}
-		.b-postAd__question{
-			margin: 40px 0px 10px 20px;
+		.b-postAd-l-wrapper{
+			text-align: center;
+			width: 100%;
+			padding-top: 250px;
 		}
-		.b-postAd__postAdBtn{
-			padding: 5px 15px;
-			margin: 0px 0px 20px 20px;
-		}
+			.b-postAd__postAdBtn{
+				padding: 15px 40px;
+			}
+
+
 .b-ourBlog{
 	margin: 20px auto;
 }			
@@ -1795,6 +1796,10 @@ body{
 		.b-ourBlog__block__head{
 			margin-bottom: 5px;
 		}
+
+.b-clientele__client{
+	width: 100%;
+}
 
 	.b-benefit{
 		width: 100%;
